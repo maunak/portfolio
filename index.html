@@ -1,66 +1,85 @@
+<!DOCTYPE html>
 <html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-	<title>maunak.</title>	
-	
-	<meta property="og:title" content="maunak" />
-	<meta property="og:description" content="maunak." />
-	<meta property="og:image" content="" />
-	<meta name="description" content="maunak."> 
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <title>maunak.</title>    
+    
+    <meta property="og:title" content="maunak" />
+    <meta property="og:description" content="maunak." />
+    <meta property="og:image" content="" />
+    <meta name="description" content="maunak."> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-	<style>
-		body{
-			background-color:#000000;
-		}
-		#M{
-			width: 32px;
-			height: 32px;
-			border-radius: 128px;
-			border: solid 16px #ffffff;
-			margin-top: -32px;
-			margin-left: -32px;
-			position: fixed;
-			top: 50%;
-			left: 50%;
-		}
-        img{
-            padding-right: 600px;
-            padding-left: 30px;
-            width: 1000px;
-            padding-top: 50px;
+    <style>
+        body {
+            background-color: #000000;
+            margin: 0; /* Remove default margin */
         }
-        .responsive-image {
-        height: auto;
-        width: 50%;
+        #M {
+            width: 32px;
+            height: 32px;
+            border-radius: 128px;
+            border: solid 16px #ffffff;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
-        .fa {  
-        padding: 20px;  
-        text-align: center;  
-        margin: 5px 2px;  
-        font-size: 20px;  
-        width: 10px; 
-        }  
-        .fa-linkedin {  
-        background: #020711;  
-        color: white;  
-        }  
-        .fa-github {  
-        background: #02070c;  
-        color: white;  
-        } 
-	</style>
+        img {
+            max-width: 100%; /* Make the image responsive */
+            height: auto;
+            display: block;
+            margin: 0 auto; /* Center the image */
+        }
+        .responsive-image-container {
+            max-width: 100%; /* Ensure container is not wider than viewport */
+            overflow: hidden; /* Hide any overflow */
+        }
+        .construction-message {
+            color: white;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .social-icons {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .social-icons li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        .fa {
+            display: inline-block;
+            padding: 10px;
+            text-align: center;
+            font-size: 20px;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            border-radius: 50%;
+            color: white;
+            transition: background-color 0.3s;
+        }
+        .fa:hover {
+            background-color: #333;
+        }
+    </style>
 </head>
 <body>
     
-    <img src="maunak1.png" border="0" class="responsive-image" alt="maunak">
-	<a href="mailto:maunakdass@gmail.com"><div id="M"></div></a>
-	<h1 style="color:white;"> the site is under construction :)</h1>
-    <ul>  
+    <div class="responsive-image-container">
+        <img src="maunak1.png" border="0" class="responsive-image" alt="maunak">
+    </div>
+    <a href="mailto:maunakdass@gmail.com"><div id="M"></div></a>
+    <h1 class="construction-message">The site is under construction :)</h1>
+    
+    <ul class="social-icons">  
         <li>   
-        <a href="https://www.linkedin.com/in/maunak/" target="_blank" class="fa fa-linkedin"> </a>   
+            <a href="https://www.linkedin.com/in/maunak/" target="_blank" class="fa fa-linkedin"></a>   
         </li>  
         <li>  
-        <a href="https://github.com/maunak" target="_blank" class="fa fa-github"> </a>  
+            <a href="https://github.com/maunak" target="_blank" class="fa fa-github"></a>  
         </li>  
     </ul>
     
