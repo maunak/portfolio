@@ -12,30 +12,36 @@
     <style>
         body {
             background-color: #000000;
-            margin: 0;
+            margin: 0; 
         }
         #M {
             width: 32px;
             height: 32px;
             border-radius: 128px;
             border: solid 16px #ffffff;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            position: absolute; 
+            top: 20px;
+            left: 20px;
         }
         img {
-            max-width: 100%;
+            max-width: 100%; 
             height: auto;
             display: block;
-            margin: 0 auto; 
+            margin: 0 auto;
         }
         .responsive-image-container {
             max-width: 100%; 
-            overflow: hidden; 
+            overflow: hidden;
+            position: relative;
         }
         .construction-message {
             color: white;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .under-construction-message {
+            color: white;
+            font-family:sans-serif;
             text-align: center;
             margin-top: 20px;
         }
@@ -70,10 +76,10 @@
     
     <div class="responsive-image-container">
         <img src="maunak1.png" border="0" class="responsive-image" alt="maunak">
-    </div>
-    <div style="position: relative; text-align: center;">
+       
         <a href="mailto:maunakdass@gmail.com"><div id="M"></div></a>
     </div>
+    <h1 class="under-construction-message">Under construction... Till then, I hope you are having a better day than I am.</h1>
     
     <ul class="social-icons">  
         <li>   
@@ -83,8 +89,6 @@
             <a href="https://github.com/maunak" target="_blank" class="fa fa-github"></a>  
         </li>  
     </ul>
-    <footer>
-  <p>under construction still..till then i hope you are having a better day than i am. <br>
-</footer>
+    
 </body>
 </html>
