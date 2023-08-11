@@ -12,27 +12,27 @@
     <style>
         body {
             background-color: #000000;
-            margin: 0; /* Remove default margin */
+            margin: 0;
         }
         #M {
             width: 32px;
             height: 32px;
             border-radius: 128px;
             border: solid 16px #ffffff;
-            position: fixed;
+            position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
         }
         img {
-            max-width: 100%; /* Make the image responsive */
+            max-width: 100%;
             height: auto;
             display: block;
-            margin: 0 auto; /* Center the image */
+            margin: 0 auto; 
         }
         .responsive-image-container {
-            max-width: 100%; /* Ensure container is not wider than viewport */
-            overflow: hidden; /* Hide any overflow */
+            max-width: 100%; 
+            overflow: hidden; 
         }
         .construction-message {
             color: white;
@@ -71,7 +71,9 @@
     <div class="responsive-image-container">
         <img src="maunak1.png" border="0" class="responsive-image" alt="maunak">
     </div>
-    <a href="mailto:maunakdass@gmail.com"><div id="M"></div></a>
+    <div style="position: relative; text-align: center;">
+        <a href="mailto:maunakdass@gmail.com"><div id="M"></div></a>
+    </div>
     <h1 class="construction-message">The site is under construction :)</h1>
     
     <ul class="social-icons">  
